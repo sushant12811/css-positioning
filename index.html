@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .blue1{
+        height:0px;
+        width:0px;
+        border-top: 215px solid transparent;
+        border-bottom: 20px  solid transparent;
+        border-left:300px solid blue;
+        position: relative;
+    }
+        .blue2{
+        height:0px;
+        width:0px;
+        border-top: 330px solid transparent;
+        border-bottom: 20px  solid transparent;
+        border-left:300px solid blue;
+        position:relative;
+        bottom:100px;
+        
+    }
+    .red1{
+        height:0px; 
+        width:0px;       
+        border-top: 180px solid transparent;
+        border-bottom: 10px  solid transparent;
+        border-left: 240px solid red;
+        position: relative;
+        bottom:190px;
+        right: 285px;
+        z-index: 10;
+
+
+    }
+    .red2{
+        height:0px;  
+        width:0px;      
+        border-top: 285px solid transparent;
+        border-bottom: 10px  solid transparent;
+        border-left: 250px solid red;
+        position: relative;
+        bottom: 295px;
+        right:285px;
+        
+    }
+
+    .blue1 .red1 > div{
+        height:80px;
+        width: 80px;
+        border-radius: 50%;
+        position: absolute;
+        bottom:40px;
+        right: 125px;;
+        box-shadow: 0px 20px 0px 0px white;
+
+    }
+
+    
+    #star {
+        background-color:white;
+      width: 35px;
+      height:35px;
+      position: relative;
+      top:50px;
+      left:21px;
+    }
+    #star:before,
+    #star:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 35px;
+      width: 35px;
+      background: white;
+    }
+    #star:before {
+      transform: rotate(30deg);
+    }
+    #star:after {
+      transform: rotate(60deg);
+    }
+
+    #star2 {
+      background-color:white;
+      width: 60px;
+      height: 60px;
+      position: relative;
+       right: 200px;
+       bottom: 100px;
+
+    }
+    #star2:before,
+    #star2:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 60px;
+      width: 60px;
+      background:white;
+    }
+    #star2:before {
+      transform: rotate(30deg);
+    }
+    #star2:after {
+      transform: rotate(60deg);
+    }
+
+        
+    
+
+
+</style>
+<body>
+    <div class = "blue1">
+        <div class = "red1">
+            <div >
+                <div id = "star"></div>
+            </div>
+            
+        </div>
+    </div>
+            
+    <div class = "blue2">
+        <div class = "red2">
+            <div id="star2" ></div>
+        
+        </div>
+    </div>
+   
+
+    </div>
+    
+</body>
+</html
